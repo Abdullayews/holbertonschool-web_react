@@ -1,3 +1,62 @@
+<div align="center">
+
+# ⚛️ TypeScript
+
+**JavaScript, but it checks your work.**
+
+*Interfaces, generics, namespaces, declaration merging, ambient types and nominal typing — the type system that catches bugs before they run.*
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Webpack](https://img.shields.io/badge/bundler-Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)](https://webpack.js.org)
+[![ESLint](https://img.shields.io/badge/lint-ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org)
+[![Holberton](https://img.shields.io/badge/Holberton-Specialization-E44D26?style=for-the-badge)](https://www.holbertonschool.com)
+
+</div>
+
+---
+
+## 📖 About this project
+
+TypeScript stands in an unusual relationship to JavaScript: it offers all of
+JavaScript's features, plus an additional layer on top — **the type system**.
+JavaScript provides primitives like `string` and `number`, but never checks
+that you've consistently assigned them. TypeScript does. Your existing
+working JavaScript code *is* TypeScript code; the benefit is that the
+compiler highlights unexpected behavior before it ships.
+
+This project works through the type system end to end across six tasks —
+from basic annotated interfaces to ambient declarations and branded nominal
+types — with **webpack + babel** compiling each task folder and ESLint
+keeping the style honest.
+
+## 🗂️ The tasks
+
+| Task | Topic | The exercise |
+|---|---|---|
+| [`task_0/`](task_0) | Interfaces + DOM | A `Student` interface, rendered as an HTML table |
+| [`task_1/`](task_1) | Interfaces, extended | `Teacher`, `Directors`, and a `StudentClass` built to constructor interfaces |
+| [`task_2/`](task_2) | Advanced types | Employee literal types, `Director` / `Teacher` classes, `createEmployee` + type predicates |
+| [`task_3/`](task_3) | Ambient declarations | `crud.js` imported via a hand-written `crud.d.ts` |
+| [`task_4/`](task_4) | Namespaces & merging | `Subjects` namespace: Cpp, Java, React — extended by declaration merging |
+| [`task_5/`](task_5) | Nominal typing | `MajorCredits` / `MinorCredits` separated by `_brand` |
+
+Each task is a self-contained mini-project: its own `package.json`,
+`tsconfig.json`, `webpack.config.js` and `js/main.ts`. Install and build
+from inside the task folder:
+
+```bash
+cd task_0
+npm install
+npm run build    # → dist/
+```
+
+---
+
+## 📚 Study notes — the original notes from this repo
+
+> The notes below were written while working through the project — kept as-is,
+> because they're the actual learning trail.
+
 # TypeScript
 TypeScript is AWESOME!!
 
@@ -275,3 +334,7 @@ export function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits) 
 // credit: number
 ```
 Even though Major and MinorCredits are of the same shape, they each have a _brand that differentiates them. So they cannot be used interchangably because their _brands are different.
+
+---
+
+✍️ **Muhəmməd Abdullayev** · [![GitHub](https://img.shields.io/badge/@Abdullayews-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Abdullayews) · one of the projects in **[holbertonschool-web_react](../README.md)**
